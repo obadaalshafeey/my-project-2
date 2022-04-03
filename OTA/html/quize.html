@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer Reslut </title>
+  
+<link rel="stylesheet" href="../css/quize.css">
+
+    <style> 
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+    <!-- //////////////////////navbar///////////////////////////////////// -->
+    <nav class="nav">
+        <div class='logo'>
+          OTA
+        </div>
+        <ul id="menu" class="items">
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">About</a></li>  
+        </ul>
+        <span id="menu_btn" class="material-icons burger">Menu</apan>
+      </nav>
+      
+    <!-- //////////////////////////////////////////////////////////////////// -->
+    <div id="quiz" class="quiz">
+        <div id="quizhead" class="quizhead">
+            <h1> HTML Quiz </h1>
+            <div id="timer" class="timer">
+                <div> Time left :</div>
+                <div id="time" class="countdown">00:10 </div>
+
+            </div>
+            <hr class="hr">
+
+        </div>
+        <!-- <div class="time_line"></div> -->
+
+
+        <section>
+            <div class="que_text" id="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+             <div class="option_list" id="option_list">
+                <!-- <button id="option1"></button><br>
+                <button  id="option2"></button><br>
+                <button  id="option3"></button><br>
+                <button  id="option4"></button><br>
+                 -->
+                <!-- Here I've inserted options from JavaScript -->
+           
+            <ol >
+                <li ><label   id='option1' for='item1'><input type='radio' name='item'></label></li>
+                <li><label  id='option2' for='item2'><input type='radio' name='item'></label></li>
+                <li><label  id='option3' for='item3'><input type='radio' name='item'></label></li>
+                <li><label  id='option4' for='item4'><input type='radio' name='item'></label></li>
+            </ol> 
+
+             </div>
+        </section>
+   <div>
+        <!-- <h3 id="que">Which of the following is the leading cause of planar fascitis?</h3> -->
+
+
+    <div class="total_que">
+        <!-- Here I've inserted Question Count Number from JavaScript -->
+    </div>
+</footer>
+    <hr class="hr">
+    <div id="total" class="next">
+        <br>
+        
+        <!-- <span id="Qnumber">  of 5 Questiones</span> -->
+        <div id="box" class="box"><button class="btn btn-next" id="next" onclick="nextq()">Next</button> </div>
+
+    </div>
+        
+    </div>
+</div>
+ 
+  
+</body>
+
+<script src="../js/quize.js"></script>
+</html>

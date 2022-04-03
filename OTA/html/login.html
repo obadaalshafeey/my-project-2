@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <style>
+        
+
+    </style>
+</head>
+
+<body>
+
+    <!--Open NAvigation bar -->
+    
+    <nav class="nav">
+        <div class='logo'>
+            <h1> OTA</h1>
+        </div>
+        <ul id="menu" class="items">
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+        </ul>
+        <span id="menu_btn" class="material-icons burger">Menu</apan>
+    </nav>
+    <!-- END NAvigation bar -->
+
+    <!-- start  container -->
+ <!-- onsubmit="login() -->
+    <div class="container">
+        <div class="login">
+            <div class="container">
+                <form id="login">
+                <h1>Log in</h1>
+                <input type="text" placeholder="User name" name="firstname" id="usrname">
+                <input type="password" placeholder="password" name="password" id="usrpassword">
+                <br><br>
+                <!-- end  container -->
+                <span id="msg"></span>  <!--- msg -->
+
+                <!--start log in -onsubmit="unclice()"-->
+                <button type="button" id="login" onclick="checkDate()" >log in</button>
+
+                <!--end log in -->
+                    </form>
+            </div>
+        </div>
+        <!--start register-->
+        <div class="register">
+            <div class="container">
+
+                <h2 class="hello">Hello</h2>
+                <p>Enter your personal details and start journey with us</p>
+                <a href="../../index.html"><button class="button">Register <i id="register" class="fas fa-arrow-circle-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div id="footer" class="footer">
+           <P id="pf" class="pf"> @ All Copyright Reserved </P>
+           <a href="" id="info" class="info"> Info. </a>
+        </div>
+
+    </footer>
+    
+
+</body>
+<script src="../js/login.js"></script>
+
+</html>
