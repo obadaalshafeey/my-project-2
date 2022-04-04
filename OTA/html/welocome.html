@@ -9,7 +9,7 @@
     <title>Welcome to OTA Quiz </title>
 <link rel="stylesheet" href="../css/welocome.css">
     <style>
-      
+        body{background-image:url("../img/bg.jpg");}
     </style>
 </head>
 
@@ -46,8 +46,8 @@
             OTA
         </div>
         <ul id="menu" class="items">
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="../html/about.html">About</a></li>
+            <li class="item"><a href="#" onclick="logout()">Login</a></li>
         </ul>
         <span id="menu_btn" class="material-icons burger">Menu</apan>
     </nav>
@@ -63,18 +63,8 @@
                 on the web in an easy and fast way.</h3>
 
             <form id="optionform" class="optionform">
-
-                <select name="front-end" id="front" class="front">
-                    <option value="" disabled selected>Select your Language</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="javascript"> Javascript </option>
-
-                </select>
                 <br><br>
-                <button type="button" id="start" class="start">Start Quiz </button>
-
-<a href="">  </a>
+               <a href="../html/quize.html"><button type="button" id="start" class="start">Start Quiz </a></button> 
             </form>
         </div>
 

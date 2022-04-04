@@ -105,8 +105,6 @@ function quebody( x ){
   document.getElementById("option3").innerHTML= x. options[2];
   document.getElementById("option4").innerHTML= x. options[3];
 
-
-
 }
 startquiz()
 
@@ -120,7 +118,7 @@ function showque() {
 else {
 i++;
 quebody(cquestions[i]);
-console.log(quebody(cquestions[i]));
+// console.log(quebody(cquestions[i]));
 }
 }
 
@@ -138,20 +136,63 @@ function correctque(x){
 
 }
 
-function nextq(){
-
-  correctque()
-
-  // document.getElementById("next").disabled=true;
+// function nextq(){
 
   
 
+//   // document.getElementById("next").disabled=true;
+
+  
+
+// }
+
+
+
+var choosed=0;
+function ans1(){
+  choosed =1 ;
+
+}
+function ans2(){
+  choosed =2 ;
+  
+}
+
+function ans3(){
+  choosed =3 ;
+  
+}
+
+function ans4(){
+  choosed =4 ;
+  
+}
+
+let anse=[];
+let indexAns=0;
+function setAnswers(){
+anse[indexAns]=choosed;
+indexAns++;
+
+}
+function nextq(){
+  if(choosed>0){
+  setAnswers();
+  correctque();
+}
 }
 
 
+
+
 function localStorage() {
-  let x =JOSN.stringify( '');
+  let x =JOSN.stringify(anse);
   localStorage.setItem('data', x);  
   }
   
   localStorage()
+
+  function onclick(){
+    window.location="../../index.html"
+    
+    }

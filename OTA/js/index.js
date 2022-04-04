@@ -121,7 +121,7 @@ console.log(spassword);
 
 // Redirecting to login page.
 new User(fname, lname,email, password, spassword);
-window.location.href = "../html/login.html"; 
+location.replace("../html/login.html");
 }  
 checking();
 

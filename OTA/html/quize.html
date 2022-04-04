@@ -24,8 +24,9 @@
           OTA
         </div>
         <ul id="menu" class="items">
-          <li class="item"><a href="#">Home</a></li>
+         
           <li class="item"><a href="#">About</a></li>  
+          <li class="item"><a href="#" onclick="">Login</a></li>
         </ul>
         <span id="menu_btn" class="material-icons burger">Menu</apan>
       </nav>
@@ -33,7 +34,7 @@
     <!-- //////////////////////////////////////////////////////////////////// -->
     <div id="quiz" class="quiz">
         <div id="quizhead" class="quizhead">
-            <h1> HTML Quiz </h1>
+            <h1> Quiz </h1>
             <div id="timer" class="timer">
                 <div> Time left :</div>
                 <div id="time" class="countdown">00:10 </div>
@@ -58,10 +59,10 @@
                 <!-- Here I've inserted options from JavaScript -->
            
             <ol >
-                <li ><label   id='option1' for='item1'><input type='radio' name='item'></label></li>
-                <li><label  id='option2' for='item2'><input type='radio' name='item'></label></li>
-                <li><label  id='option3' for='item3'><input type='radio' name='item'></label></li>
-                <li><label  id='option4' for='item4'><input type='radio' name='item'></label></li>
+                <li><label onclick="ans1()"  id='option1' for='item1'><input type='radio' name='item'></label></li>
+                <li><label onclick="ans2()" id='option2' for='item2'><input type='radio' name='item'></label></li>
+                <li><label onclick="ans3()"  id='option3' for='item3'><input type='radio' name='item'></label></li>
+                <li><label onclick="ans4()" id='option4' for='item4'><input type='radio' name='item'></label></li>
             </ol> 
 
              </div>

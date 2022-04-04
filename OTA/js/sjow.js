@@ -11,6 +11,12 @@ function infor(){
     
     function callData()
     {
-    
+    if (anse[]==)
     
     }
+
+
+    function onclick(){
+        window.location="../../index.html"
+        
+        }

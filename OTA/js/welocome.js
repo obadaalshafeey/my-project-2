@@ -13,14 +13,38 @@ const start_btn = document.getElementById("start");
 
 start_btn.onclick = ()=>{
 
-//         if (front.value == "html") {
+   
+//         if (Poisition.value == "html") {
 //               window.location="../pages/quiz.html"    
 //                 }
-//         else if (front.value == "css") {
+//         else if (Poisition.value == "css") {
 //             window.location="../pages/quiz.html" 
 // }
-// else  (front.value == "javascript") 
+// else  (Poisition.value == "javascript") 
 //             window.location="../pages/quiz.html" 
 
-window.location="./quize.html" 
+// window.location="./quize.html" 
+// }
+
+// function checkDate(){
+
+   
+
+//     let info1=JSON.parse(X)
+   
+//     console.log(X);
+// console.log(info1);
+//     console.log(info1[0]);
+//     console.log(info1[3]);
+
+// if ((enterunum.value ==info1[0])&&(enterPwd.value == info1[3])) {
+    
+//     alert("sucs");
+//     window.location="./welocome.html";
+
+// }
+
+function logout(){
+window.localStorage="../../index.html"
+
 }

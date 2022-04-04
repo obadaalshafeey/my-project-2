@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./pro.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" href="/masterMinds_OTA/img/icologo.ico">
     <script src="https://kit.fontawesome.com/b4ff4e859b.js" crossorigin="anonymous"></script>
 
@@ -18,7 +19,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-body{
+body{ background-image: url("../img/bg.jpg");
   font-family: montserrat;
 }
 nav{
@@ -165,8 +166,8 @@ footer{
         </label>
         <label class="logo">OTA</label>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
           <li><a href="#">About</a></li>
+          <li class="item"><a href="../../index.html" onclick="logout()">Login</a></li>
          
         </ul>
       </nav>
@@ -188,7 +189,7 @@ footer{
             <h1> OTA Team </h1>
         <!--   Aya info. -->
         <div id="team" class="info-box aya bdr">
-            <div id="info-contant"> <img src="./img/aya.jpg" alt="aya pic" class="team-pic"> </div>
+            <div id="info-contant"> <img src="../img/aya.jpg" alt="aya pic" class="team-pic"> </div>
             <div id="info-contant min-hei">
                 <h2>Aya AlSawa </h2>
                 <h4>Full Stack Developer</h4>
@@ -201,7 +202,7 @@ footer{
 
         <!-- Obada info -->
         <div id="team" class="info-box obada bdr" >
-            <div id="info-contant"> <img src="./img/obada.PNG" alt="obada pic" class="team-pic"></div>
+            <div id="info-contant"> <img src="../img/obada.PNG" alt="obada pic" class="team-pic"></div>
                 <div id="info-contant min-hei">
                     <h2>Obada AlShafeey </h2>
                     <h4> Full Stack Developer</h4>
@@ -212,7 +213,7 @@ footer{
 
                 <!-- Tamara info -->
                 <div id="team" class="info-box tamara bdr">
-                    <div id="info-contant"><img src="./img/tamara.png" alt="Tamara pic" class="team-pic"></div>
+                    <div id="info-contant"><img src="../img/tamara.png" alt="Tamara pic" class="team-pic"></div>
                     <div id="info-contant min-hei"> <h2>Tamara AlShabatat</h2> <small> Leader</small>
                     <h4> Full Stack Developer</h4>
                     <a href="https://github.com/tamara126enad/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>&emsp;
@@ -224,7 +225,15 @@ footer{
             <div class="content1">
                
               </div>
-              <footer>
+
+              <footer style="margin-top:-10%;">
+                <div id="footer" class="footer" >
+                    <P id="pf" class="pf"> All Copyright @ Reserved </P>
+                    <P id="ota" class="ota"> Desgined by OTA, 2022 </P>
+        
+                </div>
+            </footer>
+              <!-- <footer>
                 <div class="main-content">
                   <div class="left box">
                     <h2>About </h2>
@@ -265,7 +274,7 @@ footer{
                 
                   
                 </div>
-              </footer>
+              </footer> -->
 
 
 
