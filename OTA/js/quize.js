@@ -1,33 +1,33 @@
 'use strict';
 
-const quiz_box = document.getElementById("quiz");
-let que_count = 0;
+// const quiz_box = document.getElementById("quiz");
+// let que_count = 0;
 
-function startTimer(duration, view_date) {
-  var countdown = duration, minutes, seconds;
-  setInterval(function () {
-      minutes = parseInt(countdown / 60, 10);
-      seconds = parseInt(countdown % 60, 10);
+// function startTimer(duration, view_date) {
+//   var countdown = duration, minutes, seconds;
+//   setInterval(function () {
+//       minutes = parseInt(countdown / 60, 10);
+//       seconds = parseInt(countdown % 60, 10);
 
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
+//       minutes = minutes < 10 ? "0" + minutes : minutes;
+//       seconds = seconds < 10 ? "0" + seconds : seconds;
 
-      view_date.textContent = minutes + ":" + seconds;
+//       view_date.textContent = minutes + ":" + seconds;
 
-      if (--countdown < 0) {
-          // countdown = duration;
-          window.location="./show.html"
+//       if (--countdown < 0) {
+//           // countdown = duration;
+//           window.location="./show.html"
 
-      }
-  }, 1000);
-}
+//       }
+//   }, 1000);
+// }
 
-window.onload = function () {
-  var minutesOfFive = 10*1,
-      view_date = document.querySelector('#time');
+// window.onload = function () {
+//   var minutesOfFive = 10*1,
+//       view_date = document.querySelector('#time');
    
-  startTimer(minutesOfFive, view_date);
-};
+//   startTimer(minutesOfFive, view_date);
+// };
 
 
 
@@ -90,7 +90,8 @@ let cquestions = [
 ]
 
 let counter=0;
-
+let userAnswers=[];
+let x=[];
 function startquiz(){
   quebody( cquestions[0] )
 
@@ -114,7 +115,7 @@ function showque() {
   if (i==cquestions.length-1 ){  
     
     document.getElementById("next").innerHTML="Submit";
-    window.location="./show.html"
+    window.location="../html/show.html"
 }
 else {
 i++;
@@ -146,3 +147,11 @@ function nextq(){
   
 
 }
+
+
+function localStorage() {
+  let x =JOSN.stringify( '');
+  localStorage.setItem('data', x);  
+  }
+  
+  localStorage()
