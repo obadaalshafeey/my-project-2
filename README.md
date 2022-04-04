@@ -14,6 +14,12 @@ Group members:
 3- Obada Al-Shafeey
 [mockup and wireframe ]()
 
-[live link ]()
+[live link ](https://obadaalshafeey.github.io/my-project-2/)
 
 [github](https://github.com/obadaalshafeey)
+
+
+[trello](https://trello.com/invite/b/JaunnpQr/7165cacf88640de3fa3efb630c1ebd2f/ota)
+
+
+
